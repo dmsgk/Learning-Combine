@@ -13,6 +13,7 @@
 		FCB2479226D0CACE001F42FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCB2479026D0CACE001F42FC /* Main.storyboard */; };
 		FCB2479426D0CACE001F42FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCB2479326D0CACE001F42FC /* Assets.xcassets */; };
 		FCB2479726D0CACE001F42FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCB2479526D0CACE001F42FC /* LaunchScreen.storyboard */; };
+		FCB2479F26D0D279001F42FC /* MyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB2479E26D0D279001F42FC /* MyViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FCB2479326D0CACE001F42FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCB2479626D0CACE001F42FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCB2479826D0CACE001F42FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCB2479E26D0D279001F42FC /* MyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				FCB2478A26D0CACE001F42FC /* AppDelegate.swift */,
 				FCB2478C26D0CACE001F42FC /* SceneDelegate.swift */,
 				FCB2478E26D0CACE001F42FC /* ViewController.swift */,
+				FCB2479E26D0D279001F42FC /* MyViewModel.swift */,
 				FCB2479026D0CACE001F42FC /* Main.storyboard */,
 				FCB2479326D0CACE001F42FC /* Assets.xcassets */,
 				FCB2479526D0CACE001F42FC /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			files = (
 				FCB2478F26D0CACE001F42FC /* ViewController.swift in Sources */,
 				FCB2478B26D0CACE001F42FC /* AppDelegate.swift in Sources */,
+				FCB2479F26D0D279001F42FC /* MyViewModel.swift in Sources */,
 				FCB2478D26D0CACE001F42FC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
