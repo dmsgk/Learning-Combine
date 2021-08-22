@@ -35,6 +35,15 @@ class ViewController: UIViewController {
             .receive(on: RunLoop.main)
             .assign(to: \.passwordConfirmInput, on: viewModel)
             .store(in: &mySubscriptions)
+        
+        
+        // 버튼이 뷰모델의 publisher를 subscribe
+        viewModel.isMatchPasswordInput
+            .print()
+            .receive(on: RunLoop.main)
+            .assign(to: \.isValid, on: myButton)
+            .store(in: &mySubscriptions)
+        
     }
     
 
@@ -47,5 +56,19 @@ extension UITextField {
             .compactMap { $0.object as? UITextField }
             .map{ $0.text ?? "" }
             .eraseToAnyPublisher()
+    }
+}
+
+
+extension UIButton {
+    var isValid: Bool {
+        get {
+            backgroundColor == .yellow
+        }
+        set {
+            backgroundColor = newValue ? .yellow : .lightGray
+            isEnabled = newValue
+            setTitleColor(newValue ? .blue : .white, for: .normal)
+        }
     }
 }
